@@ -43,7 +43,7 @@ async def anime(ctx):
     await Bot.say(embed=embed)
 
 token = os.environ.get('BOT_TOKEN')
-
+bot.run(token)
 
 
 
