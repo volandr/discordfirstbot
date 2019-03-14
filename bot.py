@@ -41,7 +41,8 @@ async def anime(ctx):
     embed.add_field(name='Название', value=anime[0], inline=True)
     embed.add_field(name='Описание', value=anime[2], inline=True)
     await Bot.say(embed=embed)
-bot.run("NTQ0OTU5NzU1MzE2MzYzMjY1.D2wfIg.cqGle-8CJQudB3WeK_A8SA-0bE8")
+token = os.environ.get('BOT_TOKEN')
+Bot.run(str(token))
 
 
 
